@@ -23,5 +23,5 @@ on line 89 of `.lib/module.js` in `v3.3.0` of `@nuxtjs/tailwindcss`, there is an
       const url = nuxt.server.listeners ? nuxt.server.listeners[0].url : '/'
 ```
 
-This uses `nuxt.server.listeners`, which does not exist if the listener was created with an external server framework.
+This uses `nuxt.server.listeners`, which is empty if the listener was created with an external server framework.
 This example uses `koa`.
